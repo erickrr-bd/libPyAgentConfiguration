@@ -108,7 +108,7 @@ class libPyAgentConfiguration:
 		"""
 		try:
 			self.utils.create_yaml_file(agent_configuration_data, agent_configuration_file)
-			self.utils.change_owner(agent_configuration_file, user, group, "644")
+			self.utils.change_owner(agent_configuration_file, user, group, "640")
 			if path.exists(agent_configuration_file):
 				self.dialog.create_message("\nAgent configuration created.", 7, 50, "Notification Message")
 				self.logger.create_log("Agent configuration created", 2, "__createAgentConfiguration", use_file_handler = True, file_name = log_file_name, user = user, group = group)

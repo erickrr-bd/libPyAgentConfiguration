@@ -3,14 +3,14 @@ from setuptools import find_packages, setup
 
 HERE = Path(__file__).parent
 
-VERSION = '1.2'
+VERSION = '1.3.0'
 PACKAGE_NAME = 'libPyAgentConfiguration' 
 AUTHOR = 'Erick Roberto Rodríguez Rodriguez'
 AUTHOR_EMAIL = 'erickrr.tbd93@gmail.com, erodriguez@tekium.mx' 
 URL = 'https://github.com/erickrr-bd/libPyAgentConfiguration' 
 
 LICENSE = 'GPLv3' 
-DESCRIPTION = "Dynamic, memory-secure configuration management engine written in Python." 
+DESCRIPTION = "Easy management of the configuration of an agent that monitors a daemon or service and reports to Telegram." 
 LONG_DESCRIPTION = (HERE / "README.md").read_text(encoding ='utf-8')
 LONG_DESC_TYPE = "text/markdown"
 
